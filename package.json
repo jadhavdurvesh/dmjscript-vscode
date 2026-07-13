@@ -1,9 +1,21 @@
 {
   "name": "dmjscript",
   "displayName": "DMJScript",
-  "description": "Syntax highlighting for DMJScript",
+  "description": "Syntax highlighting and language support for DMJScript",
   "version": "1.0.0",
   "publisher": "jadhavdurvesh",
+  "license": "MIT",
+
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jadhavdurvesh/dmjscript-vscode"
+  },
+
+  "homepage": "https://github.com/jadhavdurvesh/dmjscript-vscode",
+
+  "bugs": {
+    "url": "https://github.com/jadhavdurvesh/dmjscript-vscode/issues"
+  },
 
   "engines": {
     "vscode": "^1.80.0"
@@ -11,6 +23,15 @@
 
   "categories": [
     "Programming Languages"
+  ],
+
+  "keywords": [
+    "dmjscript",
+    "dmj",
+    "arduino",
+    "embedded",
+    "robotics",
+    "language"
   ],
 
   "contributes": {
