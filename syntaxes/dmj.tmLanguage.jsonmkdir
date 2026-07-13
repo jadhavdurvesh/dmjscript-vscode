@@ -1,0 +1,26 @@
+{
+  "scopeName": "source.dmj",
+  "name": "DMJScript",
+
+  "patterns": [
+    {
+      "match": "\\b(var|show|ask|if|then|else|end|repeat|function|call|hardware|arduino|led|servo|on|off|wait|move)\\b",
+      "name": "keyword.control.dmj"
+    },
+
+    {
+      "match": "\"[^\"]*\"",
+      "name": "string.quoted.double.dmj"
+    },
+
+    {
+      "match": "\\b[0-9]+(\\.[0-9]+)?\\b",
+      "name": "constant.numeric.dmj"
+    },
+
+    {
+      "match": "--.*$",
+      "name": "comment.line.dmj"
+    }
+  ]
+}

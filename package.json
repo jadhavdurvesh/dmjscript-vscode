@@ -1,0 +1,39 @@
+{
+  "name": "dmjscript",
+  "displayName": "DMJScript",
+  "description": "Syntax highlighting for DMJScript",
+  "version": "1.0.0",
+  "publisher": "jadhavdurvesh",
+
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+
+  "categories": [
+    "Programming Languages"
+  ],
+
+  "contributes": {
+    "languages": [
+      {
+        "id": "dmj",
+        "aliases": [
+          "DMJScript",
+          "dmj"
+        ],
+        "extensions": [
+          ".dmj"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+
+    "grammars": [
+      {
+        "language": "dmj",
+        "scopeName": "source.dmj",
+        "path": "./syntaxes/dmj.tmLanguage.json"
+      }
+    ]
+  }
+}
