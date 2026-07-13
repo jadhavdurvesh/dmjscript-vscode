@@ -1,39 +1,30 @@
 {
   "name": "dmjscript",
   "displayName": "DMJScript",
-  "description": "Syntax highlighting and language support for DMJScript",
+  "description": "Official DMJScript programming language support for Visual Studio Code",
   "version": "1.0.0",
   "publisher": "jadhavdurvesh",
   "license": "MIT",
-
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jadhavdurvesh/dmjscript-vscode"
-  },
-
-  "homepage": "https://github.com/jadhavdurvesh/dmjscript-vscode",
-
-  "bugs": {
-    "url": "https://github.com/jadhavdurvesh/dmjscript-vscode/issues"
-  },
-
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.80.0"
   },
-
   "categories": [
     "Programming Languages"
   ],
-
   "keywords": [
     "dmjscript",
     "dmj",
+    "programming-language",
     "arduino",
     "embedded",
-    "robotics",
-    "language"
+    "iot",
+    "robotics"
   ],
-
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jadhavdurvesh/dmjscript-vscode.git"
+  },
   "contributes": {
     "languages": [
       {
@@ -48,7 +39,6 @@
         "configuration": "./language-configuration.json"
       }
     ],
-
     "grammars": [
       {
         "language": "dmj",

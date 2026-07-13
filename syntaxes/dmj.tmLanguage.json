@@ -9,6 +9,11 @@
     },
 
     {
+  "match": "\\b(var|show|ask|if|then|else|end|repeat|function|call|hardware|arduino|led|servo|on|off|wait)\\b",
+  "name": "keyword.control.dmj"
+},
+
+    {
       "match": "\"[^\"]*\"",
       "name": "string.quoted.double.dmj"
     },
