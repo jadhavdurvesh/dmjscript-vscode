@@ -2,8 +2,8 @@
   "name": "dmjscript",
   "displayName": "DMJScript",
   "description": "Official DMJScript programming language support for Visual Studio Code",
-  "version": "1.0.0",
-  "publisher": "jadhavdurvesh",
+  "version": "1.0.1",
+  "publisher": "durveshjadhav",
   "license": "MIT",
   "icon": "icon.png",
   "engines": {

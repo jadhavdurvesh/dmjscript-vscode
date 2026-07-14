@@ -105,11 +105,13 @@ move arm 90
 
 ---
 
-## Installation
+## Install
 
-### Visual Studio Marketplace
+Search for "DMJScript" in the VS Code Extensions Marketplace
 
-Install directly from the Visual Studio Marketplace.
+or install directly from:
+
+https://marketplace.visualstudio.com/items?itemName=durveshjadhav.dmjscript
 
 ### Manual Installation
 
