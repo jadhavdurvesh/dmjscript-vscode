@@ -1,0 +1,95 @@
+{
+    "DMJ Variable": {
+        "prefix": "var",
+        "body": [
+            "var ${1:name} = ${2:value}"
+        ],
+        "description": "Create a variable"
+    },
+
+    "DMJ Show": {
+        "prefix": "show",
+        "body": [
+            "show ${1:value}"
+        ],
+        "description": "Display output"
+    },
+
+    "DMJ Input": {
+        "prefix": "ask",
+        "body": [
+            "ask ${1:variable}"
+        ],
+        "description": "Read user input"
+    },
+
+    "DMJ If Else": {
+        "prefix": "if",
+        "body": [
+            "if ${1:condition} then",
+            "",
+            "    ${2}",
+            "",
+            "else",
+            "",
+            "    ${3}",
+            "",
+            "end"
+        ],
+        "description": "If Else statement"
+    },
+
+    "DMJ Repeat": {
+        "prefix": "repeat",
+        "body": [
+            "repeat ${1:count}",
+            "",
+            "    ${2}",
+            "",
+            "end"
+        ],
+        "description": "Repeat loop"
+    },
+
+    "DMJ Function": {
+        "prefix": "func",
+        "body": [
+            "function ${1:name}",
+            "",
+            "    ${2}",
+            "",
+            "end"
+        ],
+        "description": "Create function"
+    },
+
+    "DMJ Function Call": {
+        "prefix": "call",
+        "body": [
+            "call ${1:functionName}"
+        ],
+        "description": "Call function"
+    },
+
+    "DMJ LED": {
+        "prefix": "led",
+        "body": [
+            "led ${1:status} = ${2:13}",
+            "",
+            "on ${1:status}",
+            "wait 1000",
+            "off ${1:status}"
+        ],
+        "description": "LED example"
+    },
+
+    "DMJ Servo": {
+        "prefix": "servo",
+        "body": [
+            "servo ${1:arm} = ${2:9}",
+            "",
+            "move ${1:arm} 90"
+        ],
+        "description": "Servo example"
+    }
+}

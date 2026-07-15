@@ -45,6 +45,13 @@
         "scopeName": "source.dmj",
         "path": "./syntaxes/dmj.tmLanguage.json"
       }
+    ],
+
+    "snippets": [
+    {
+        "language": "dmj",
+        "path": "./snippets/dmj.code-snippets"
+    }
     ]
   }
 }
