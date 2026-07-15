@@ -7,6 +7,14 @@
   "license": "MIT",
   "icon": "icon.png",
 
+  "files": [
+  "compiler/**",
+  "src/**",
+  "syntaxes/**",
+  "snippets/**",
+  "language-configuration.json"
+],
+
   "main": "./src/extension.js",
 
   "activationEvents": [

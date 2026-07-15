@@ -1,4 +1,5 @@
 const vscode = require('vscode');
+const path = require('path');
 
 function activate(context) {
 
@@ -32,9 +33,15 @@ function activate(context) {
 
             terminal.show();
 
-            terminal.sendText(
-                `/workspaces/dmjscript/dmjc run "${filePath}"`
-            );
+           const compilerPath = path.join(
+    context.extensionPath,
+    "compiler",
+    "dmjc"
+);
+
+terminal.sendText(
+    `"${compilerPath}" run "${filePath}"`
+);
 
             vscode.window.showInformationMessage(
                 'Running DMJScript file...'
