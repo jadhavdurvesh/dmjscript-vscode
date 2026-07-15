@@ -1,23 +1,50 @@
 const vscode = require('vscode');
 
-console.log("DMJScript extension loaded!");
-
 function activate(context) {
 
-    console.log("DMJScript activated!");
+    const statusBar = vscode.window.createStatusBarItem(
+        vscode.StatusBarAlignment.Left
+    );
+
+    statusBar.text = "$(terminal) DMJScript Ready";
+    statusBar.show();
+
+    context.subscriptions.push(statusBar);
 
     let disposable = vscode.commands.registerCommand(
         'dmjscript.run',
         function () {
 
-            vscode.window.showInformationMessage(
-                'DMJScript Run button clicked!'
+            const editor = vscode.window.activeTextEditor;
+
+            if (!editor) {
+                vscode.window.showErrorMessage(
+                    'No DMJScript file open.'
+                );
+                return;
+            }
+
+            const filePath = editor.document.fileName;
+
+            const terminal = vscode.window.createTerminal(
+                "DMJScript"
             );
 
+            terminal.show();
+
+            terminal.sendText(
+                `/workspaces/dmjscript/dmjc run "${filePath}"`
+            );
+
+            vscode.window.showInformationMessage(
+                'Running DMJScript file...'
+            );
         }
     );
 
     context.subscriptions.push(disposable);
+
+    console.log("DMJScript extension loaded!");
 }
 
 function deactivate() {}
