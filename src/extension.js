@@ -36,11 +36,11 @@ function activate(context) {
            const compilerPath = path.join(
     context.extensionPath,
     "compiler",
-    "dmjc"
+    "dmjc.exe"
 );
 
 terminal.sendText(
-    `"${compilerPath}" run "${filePath}"`
+    `& "${compilerPath}" run "${filePath}"`
 );
 
             vscode.window.showInformationMessage(
